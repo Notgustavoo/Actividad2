@@ -48,56 +48,6 @@ After downloading the template, you'll need to install some dependencies. Once t
 | `npm run build`   | Build your production site to `./dist/`                                                                  |
 | `npm run preview` | Preview your build locally, before deploying                                                             |
 
-### Folder structure
-
-Inside Foxi Astro project, you'll see the following folders and files:
-
-```plaintext
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── blocks/
-│   │   │   └── ...
-│   │   └── ui/
-│   │       └── ...
-│   ├── config/
-│   │   └── ...
-│   ├── content/
-│   │   └── blog/
-│   │       └── ...
-│   ├── data/
-│   │   └── ...
-│   ├── icons/
-│   │   └── ...
-│   ├── layouts/
-│   │   └── ...
-│   ├── page-sections/
-│   │   └── home/
-│   │       └── ...
-│   └── pages/
-│       └── ...
-└── package.json
-```
-
-| Directory/File           | Description                                                                                                                        |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `public/`                | Contains static assets like images and the favicon. These files are served directly at the root URL.                               |
-| `src/assets/`            | Contains all images and assets used in the project.                                                                                |
-| `src/components/`        | Contains reusable components for your site. This directory is divided into `ui` for UI components and `blocks` for section blocks. |
-| `src/components/blocks/` | Contains Section blocks used throughout the site.                                                                                  |
-| `src/components/ui/`     | Contains individual UI components.                                                                                                 |
-| `src/config/`            | Contains configuration files for the project in typescript format.                                                                 |
-| `src/content/`           | Holds collection data, such as blog posts.                                                                                         |
-| `src/content/blog/`      | Contains individual blog posts in markdown.                                                                                        |
-| `src/data/`              | Contains JSON and md files with content data (like features, testimonials etc).                                                    |
-| `src/icons/`             | Contains all icons used in the project, sourced from [Heroicons](https://heroicons.com/).                                          |
-| `src/layouts/`           | Contains layout components that define the overall structure of your pages.                                                        |
-| `src/pages/`             | Contains `.astro` files for each page. Each file here is exposed as a route based on its file name.                                |
-| `package.json`           | Lists dependencies and scripts for your project, including metadata and various package requirements.                              |
-
 ## Theme Configuration
 
 You can find the configuration files in the `src/config` directory. The configuration files are written in TypeScript and contain various settings for the theme, such as basic information, navigation bar, footer navigation, analytics, and social links. You can customize these settings to fit your specific needs.
@@ -156,11 +106,6 @@ To customize the fonts used in your project, follow these steps:
 
 You can add your own fonts by following [this guide](https://docs.astro.build/en/guides/fonts/#using-fontsource)
 
-### Dark/Light Mode
-
-By default, the site uses an automatic mode switcher, allowing it users to switch between light and dark modes based on the user's system settings or by using the mode switcher in the navigation bar. This is achioeved by setting the `mode-auto` class in the `Layout.astro` file.
-
-If you need to enforce a specific theme, you can set the class above as **`mode-light`** or **`mode-dark`**. When **`mode-light`** is applied, the site will consistently display in light mode, and the switcher will not be functional. Similarly, **`mode-dark`** will force the site to dark mode, with the switcher rendered non-functional. These settings allow you to maintain a fixed appearance across the site regardless of user preferences or system settings.
 
 ## License
 
