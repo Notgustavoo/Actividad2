@@ -29,13 +29,23 @@ import badge from '../../../assets/badge.svg'
 				text="Discover why thousands of professionals trust our platform to streamline their workflow and enhance productivity. Get started today and see the difference for yourself!"
 				mode="dark"
 				bg={ctaImage}
+				classes="bg-gradient-to-r from-secondary-600 via-primary-600 to-accent-600 text-white shadow-2xl border-4 border-primary-400/50"
 			>
-				<ChipNotification radius="rounded-full" classes="mb-6 box">
+				<ChipNotification
+					radius="rounded-full"
+					classes="mb-6 box bg-primary-500 text-white border-primary-400"
+				>
 					<Image src={badge} alt="Product of the Year" class="h-12 w-12" slot="button" />
 					<span class="hidden md:block">#1 Product of the Year,</span>
-					<Highlight classes="md:ml-2"> Product Hunt </Highlight>
+					<Highlight classes="md:ml-2 text-accent-200"> Product Hunt </Highlight>
 				</ChipNotification>
-				<Button size="lg" style="primary"> Get started now! </Button>
+				<Button
+					size="lg"
+					style="primary"
+					classes="bg-gradient-to-r from-accent-500 to-secondary-500 hover:from-accent-600 hover:to-secondary-600 text-white shadow-lg border-none"
+				>
+					Get started now!
+				</Button>
 			</CTA>
 		</Col>
 		<Col span="1" />
